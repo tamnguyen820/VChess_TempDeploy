@@ -1,4 +1,4 @@
-const audioSrc = "./assets/sounds/"
+const audioSrc = "src/assets/sounds/"
 const audios = {}
 const audioMapping = {
   "click": "Click.ogg",

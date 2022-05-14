@@ -7,24 +7,24 @@
           class="setting-bar"
           @click="setAnalysisModalOpen(true)"
         >
-          <img src="src/assets/images/icon/setting-bar.svg" />
+          <img src="/src/assets/images/icon/setting-bar.svg" />
         </button>
         <button
           v-if="analysisMode"
           class="import"
           @click="setImportModalOpen(true)"
         >
-          <img src="src/assets/images/icon/upload.svg" />
+          <img src="/src/assets/images/icon/upload.svg" />
         </button>
       </div>
       <button class="flip-board" @click="setFlipBoard">
-        <img class="flip-icon" src="src/assets/images/icon/flip2.svg" />
+        <img class="flip-icon" src="/src/assets/images/icon/flip2.svg" />
       </button>
       <div class="player-area" :class="{ 'flipped-col': flipBoard }">
         <div class="player" v-for="(player, index) in players" :key="index">
           <img
             class="avatar"
-            src="src/assets/images/avatar/default_avatar_k.png"
+            src="/src/assets/images/avatar/default_avatar_k.png"
           />
           <div class="player-info">
             <div class="name">{{ player.name }}</div>
@@ -39,7 +39,7 @@
                     <img
                       draggable="false"
                       class="captured-piece"
-                      :src="'src/assets/images/captured/' + p[0] + '.svg'"
+                      :src="'/src/assets/images/captured/' + p[0] + '.svg'"
                     />
                   </div>
                 </div>
@@ -88,14 +88,14 @@
         <img
           draggable="false"
           class="arrow-icon"
-          src="src/assets/images/icon/chevron-back-outline.svg"
+          src="/src/assets/images/icon/chevron-back-outline.svg"
         />
       </button>
       <button @click="goForward(1)" class="move-button">
         <img
           draggable="false"
           class="arrow-icon"
-          src="src/assets/images/icon/chevron-forward-outline.svg"
+          src="/src/assets/images/icon/chevron-forward-outline.svg"
         />
       </button>
     </div>
