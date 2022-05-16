@@ -42,7 +42,7 @@ export const settings = {
       return state.boardTheme.substring(0, state.boardTheme.indexOf("."))
     },
     getBoardUrl(state) {
-      const srcURL = "src/assets/images/board/";
+      const srcURL = "assets/images/board/";
       const theme = state.boardTheme;
       const extension = theme.substr(theme.length - 4);
       var subdir = extension === ".svg" ? "svg/" : "";

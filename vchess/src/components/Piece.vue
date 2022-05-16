@@ -13,7 +13,7 @@
 export default {
   data() {
     return {
-      srcURL: "/src/assets/images/piece/",
+      srcURL: "/assets/images/piece/",
       dragging: false,
     };
   },
