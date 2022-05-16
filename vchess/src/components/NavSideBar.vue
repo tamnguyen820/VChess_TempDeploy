@@ -23,18 +23,18 @@
         <li>
           <router-link :to="{ name: 'profile' }">Profile</router-link>
         </li>
-        <li>
+        <li class="gray">
           <router-link :to="{ name: 'play' }">Play</router-link>
         </li>
-        <!-- <li>
-          <router-link to="/">Puzzles</router-link>
-        </li> -->
+        <li class="gray">
+          <router-link :to="{ name: 'puzzles' }">Puzzles</router-link>
+        </li>
         <li>
           <router-link :to="{ name: 'analysis' }">Analysis</router-link>
         </li>
-        <!-- <li>
-          <router-link to="/">Settings</router-link>
-        </li> -->
+        <li class="gray">
+          <router-link :to="{ name: 'settings' }">Settings</router-link>
+        </li>
       </ul>
     </nav>
   </div>
@@ -68,6 +68,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// temp
+.gray {
+  a {
+    color: gray !important;
+  }
+}
 .nav-container {
   padding: 0;
   margin: 0;

@@ -247,7 +247,7 @@ $move-second-background: #f8f8f8;
 
 .side-bar {
   height: 100%;
-  width: 100%;
+  width: 25vw;
   min-height: 500px;
   min-width: 300px;
   background-color: $background-color;

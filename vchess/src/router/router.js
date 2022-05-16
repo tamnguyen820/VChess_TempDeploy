@@ -38,9 +38,25 @@ const router = createRouter({
       }
     },
     {
+      path: "/puzzles",
+      name: "puzzles",
+      component: ChessGame,
+      meta: {
+        requiresAuth: true,
+      }
+    },
+    {
       path: "/analysis",
       name: "analysis",
       component: Analysis
+    },
+    {
+      path: "/settings",
+      name: "settings",
+      component: ChessGame,
+      meta: {
+        requiresAuth: true,
+      }
     },
   ]
 });
@@ -63,7 +79,7 @@ router.beforeEach(async (to, from, next) => {
     if (await getCurrentUser()) {
       next();
     } else {
-      alert("You are not logged in!");
+      alert("Feature not available!");
       next("/");
     }
   } else {
