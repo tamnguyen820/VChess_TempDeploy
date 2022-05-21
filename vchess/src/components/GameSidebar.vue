@@ -39,7 +39,7 @@
                     <img
                       draggable="false"
                       class="captured-piece"
-                      :src="'assets/images/captured/' + p[0] + '.svg'"
+                      :src="capturedSrcPath + p[0] + '.svg'"
                     />
                   </div>
                 </div>
@@ -118,6 +118,7 @@ export default {
   data() {
     return {
       highlight: { turn: 1, index: -1 },
+      capturedSrcPath: "/assets/images/captured/",
       // players: [
       //   { name: "Random noob", side: "b" },
       //   { name: "Gotham sub", side: "w" },
