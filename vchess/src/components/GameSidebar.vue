@@ -39,7 +39,7 @@
                     <img
                       draggable="false"
                       class="captured-piece"
-                      :src="'/src/assets/images/captured/' + p[0] + '.svg'"
+                      :src="'/assets/images/captured/' + p[0] + '.svg'"
                     />
                   </div>
                 </div>
