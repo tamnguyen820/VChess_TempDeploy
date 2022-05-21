@@ -118,7 +118,8 @@ export default {
   data() {
     return {
       highlight: { turn: 1, index: -1 },
-      capturedSrcPath: "/assets/images/captured/",
+      // capturedSrcPath: "/assets/images/captured/",
+      capturedSrcPath: "/tests/",
       // players: [
       //   { name: "Random noob", side: "b" },
       //   { name: "Gotham sub", side: "w" },
